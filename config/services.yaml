@@ -1,0 +1,17 @@
+parameters:
+# Здесь могут быть параметры бандла
+
+services:
+
+  # Конфигурация для всех сервисов  этого файла по умолчанию
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  # Регистрируем контроллеры бандла как DI-сервисы
+  corite\NotificationBundle\Controller\TestController: ~
+  corite\NotificationBundle\Controller\NotificationController: ~
+  corite\NotificationBundle\Controller\Transport: ~
+  corite\NotificationBundle\Controller\Rules: ~
+  corite\NotificationBundle\Controller\NotificationLogger: ~
+
